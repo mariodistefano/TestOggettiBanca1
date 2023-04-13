@@ -6,14 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestOggettiBanca
 {
-    internal class FiatPortfolio : Asset
+    internal interface ISwiftSystem
     {
-        public Asset Asset { get; private set; }
-        public FiatPortfolio()
-        {
-
-        }
-
-        
     }
 }

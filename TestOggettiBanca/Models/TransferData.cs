@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace TestOggettiBanca
 {
-    internal class StockPortfolio : Asset
+    public class FIATDespositRequest
     {
-
-       // public Asset Asset { get; private set; }
-        public StockPortfolio()
-        {
-        }
-
+        public decimal _amount;
+        public long _accountfrom;
+        public long _accountTo;
     }
+
 }

@@ -1,26 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TestOggettiBanca
+﻿using TestOggettiBanca;
+namespace TEST.OOP.BankAccount
 {
-    internal class SwiftCentralBank : ISwiftSystem
+    class SwiftCentralBank : CentralBank, ISwiftSystem
     {
-        CommercialBanck _commercialBanck;
+        public SwiftCentralBank(string name, string Country, int MaxInterestRate, string city) : base(name, Country, MaxInterestRate, city)
+        {
 
-        public SwiftCentralBank()
-        {
         }
-        public void AddCommercialBanck(CommercialBanck commercialBanck) 
-        {
-            _commercialBanck = commercialBanck;
-        }
-        public void RemoveCommercialBank(CommercialBanck commercialBanck) 
-        {
-            _commercialBanck = null;
-        }
-
     }
+
 }
+
